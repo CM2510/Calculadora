@@ -20,6 +20,30 @@
   </head>
   <body>
   	<div>Let's Calculate</div>
+
+  	<script type="text/javascript">
+  		var operacion = prompt("Que operación desea realizar (suma, resta, multiplicacion o division)");
+  		var valor1 = prompt("Ingrese el Primer valor");
+  		var valor2 = prompt("Ingrese el segundo valor");
+
+  		if (operacion == "suma") {
+  			var resultado = valor1 + valor2;
+  			return resultado;
+  		}else if (operacion == "resta") {
+  			var resultado = valor1 - valor2;
+  			return resultado;
+  		}else if (operacion == "multiplicacion") {
+  			var resultado = valor1 * valor2;
+  			return resultado;
+  		}else if (operacion == "division") {
+  			var resultado = valor1 / valor2;
+  			return resultado;
+  		}else {
+  			alert ("defina nuevamente la operacion");
+  		};
+
+
+  	</script>
     
     
   </body>
