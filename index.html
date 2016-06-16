@@ -22,7 +22,7 @@
   	<div>Let's Calculate</div>
 
   	<script type="text/javascript">
-  		var operacion = prompt("Que operación desea realizar (suma, resta, multiplicacion o division)");
+  		var operacion = (prompt("Que operación desea realizar: \n- Suma \n- Resta \n- Multiplicacion \n- Division")).toLowerCase();
   		var valor1 = prompt("Ingrese el Primer valor");
   		var valor2 = prompt("Ingrese el segundo valor");
       
@@ -44,13 +44,13 @@
           };
       };
       
-      if (isNaN(valor1) && isNaN(valor2)) {
+      if (isNaN(valor1) || isNaN(valor2)) {
         alert("Alguno de los valores no es un número"); 
       }else{
         valor1 = parseInt(valor1);
         valor2 = parseInt(valor2);
         var result = operaciones (operacion,valor1,valor2);
-        alert("El resultado de la "+ operacion + " es : "+ result);
+        alert("El resultado de "+ valor1 + " " + operacion + "do " + valor2 + " es : "+ result);
              
       };
 
